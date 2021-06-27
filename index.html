@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML CRUD Pure JavaScript</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Welcome to the Sample CRUD Page</h1>
+        <table>
+            <tr>
+                    <!-- Turn Form Autofil/Auto Complete Off-->
+                    <!-- The code [event.preventDefault()] is defult function that hide passed out parameters from the address bar -->
+                    <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                        <!-- Full Name-->
+                        <div>
+                            <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="fullName" id="fullName">
+                        </div>
+
+                        <!-- Employee ID-->
+                        <div>
+                            <label> Employee ID </label>
+                            <input type="text" name="empCode" id="empCode">
+                        </div>
+
+                        <!-- Salary-->
+                        <div>
+                            <label> Salary</label>
+                            <input type="text" name="salary" id="salary">
+                        </div>
+
+                        <!-- City-->
+                        <div>
+                            <label> City </label>
+                            <input type="text" name="city" id="city">
+                        </div>
+
+                        <!-- Submit Button-->
+                        <div class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </tr>
+                <hr>
+                <tr>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <!-- Table Head-->
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Employee Code</th>
+                                <th>Salary</th>
+                                <th>City</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <!-- Table Body-->
+                        <tbody>
+
+                        </tbody>
+
+                    </table>
+
+            </tr>
+        </table>
+
+    </body>
+
+    <footer>
+        <script src="script.js"></script>
+    </footer>
+</html>
