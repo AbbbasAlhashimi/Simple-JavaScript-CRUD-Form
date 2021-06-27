@@ -13,7 +13,7 @@ The project consists of 3 files:<br>
       <li><b>onEdit(td) </b> <br>The function passes out the table cell values when the <i>[edit]</i> link within a selected Row ;is Pressed and then displays the table cells back into the entry form.</li>
       <li><b>updateRecord(formData) </b> <br>After the [onEdit] function displays pre-filled out form entries along with Edit/Delete hyperlinks and the [edit] hyperlink is clicked, this function will allow the user to modify/rename entries and submit them. </li>
       <li><b>onDelete(td) </b> <br>After the [onEdit] function displays pre-filled out form entries along with Edit/Delete hyperlinks and the [Delete] hyperlink is clicked, this function will disply a confirmation alert allowing the user to delete selected row or canceling the action. Once a decision is made by the user, the form entries will be resetted. </li>
-      <li><b>validate()</b> </li> <br>This function will determin whether the entries are valid or not. If the entry is invalid, the CSS class style of [label.validation-error] will be active thus it will display an error message in red color below the specified form cell. Otherwise, the status of the [validation-error] will be <i>hidden</i>.
+      <li><b>validate()</b> </li> This function will determin whether the entries are valid or not. If the entry is invalid, the CSS class style of [label.validation-error] will be active thus it will display an error message in red color below the specified form cell. Otherwise, the status of the [validation-error] will be <i>hidden</i>.
     <ul>
   
   </li>
